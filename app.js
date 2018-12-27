@@ -86,6 +86,7 @@ var view = {
 		},
 	renderClickCount: function(cat){
 			catsContainer.find('.count').html(cat.clickCount);
+			$('.adminBox').find('#catClicks')[0].value = cat.clickCount;
 	},
 	adminFormDisplay:function(){
 			$('.adminForm').css('visibility','visible');
@@ -177,5 +178,3 @@ var octopus = {
 
 
 octopus.init();
-
-
